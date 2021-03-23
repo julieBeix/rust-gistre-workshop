@@ -1,6 +1,11 @@
 pub fn vec_sum(vec: Vec<i32>) -> i32 {
-    todo!()
+    let mut res = 0;
+    for i in 0..vec.len(){
+        res += vec[i];
+    }
+    return res;
 }
+
 
 #[cfg(test)]
 mod tests {

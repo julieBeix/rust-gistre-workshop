@@ -1,5 +1,10 @@
 pub fn vec_strlen(vec: Vec<&str>) -> Vec<usize> {
-    todo!()
+    let mut res = vec![0; vec.len()];
+    for i in 0..vec.len(){
+        res[i] = vec[i].len();
+    }
+    return res;
+
 }
 
 #[cfg(test)]

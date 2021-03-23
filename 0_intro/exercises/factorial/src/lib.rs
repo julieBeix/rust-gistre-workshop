@@ -1,5 +1,9 @@
 pub fn factorial(n: i32) -> i32 {
-    todo!()
+    let mut acc = 1;
+    for i in 1..=n{
+        acc *= i
+    }
+    acc
 }
 
 #[cfg(test)]

@@ -1,5 +1,13 @@
 pub fn bubble_sort(v: &mut Vec<i32>) {
-    todo!()
+    while !is_sorted(v){
+        for i in 0..(v.len() - 1){
+            if v[i] > v[i + 1]{
+                let tmp = v[i];
+                v[i] = v[i + 1];
+                v[i + 1] = tmp;
+            }
+        }
+    }
 }
 
 pub fn is_sorted(v: &Vec<i32>) -> bool {
